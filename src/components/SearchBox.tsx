@@ -7,14 +7,14 @@ type PropsType = {
 
 const SearchBox = (props: PropsType) => {
 
-    //const onChangeHandler =(ev:ChangeEvent<HTMLInputElement>)=> props.setSearchValue(ev.currentTarget.value)
+    const onChangeHandler =(ev:ChangeEvent<HTMLInputElement>)=> props.setSearchValue(ev.currentTarget.value)
 
     return (
         <div className='col col-sm-4'>
             <input
                 className='form-control'
                 value={props.searchValue}
-                onChange={(ev)=> props.setSearchValue(ev.currentTarget.value)}
+                onChange={onChangeHandler}
                 placeholder= " ✏️ Type to search..."
             />
         </div>

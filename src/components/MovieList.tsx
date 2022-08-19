@@ -4,7 +4,7 @@ import {MoviePropsType} from "../App";
 type PropsType = {
     movies: Array<MoviePropsType>
     favouriteComponent: any
-    handleFavouritesClick?: (movie:any) => void
+    handleFavouritesClick?: (movie:MoviePropsType) => void
 }
 
 const MovieList: React.FC<PropsType> = (
